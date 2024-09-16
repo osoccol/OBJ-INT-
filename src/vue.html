@@ -1,0 +1,38 @@
+<!-- VIEW -->
+
+<h2>PRESTATAIRE</h2>
+<p>Nom : {{ presta.nom }}</p>
+<p>Prénom : {{ presta.prenom }}</p>
+<p>Age : {{ presta.age }}</p>
+<p>Email : {{ presta.email }}</p>
+<p>Clients : <span *ngFor="let cli of presta.clients"> {{ cli.nom }} </span></p>
+<hr />
+<h2>
+  CLIENT 1 <button (click)="add(client1)">AJOUTER</button>
+  <button (click)="remove(client1)">SUPPRIMER</button>
+</h2>
+<p>Nom : {{ client1.nom }}</p>
+<p>Prénom : {{ client1.prenom }}</p>
+<p>Age : {{ client1.age }}</p>
+<p>Email : {{ client1.email }}</p>
+<p>Entreprise : {{ client1.entreprise }}</p>
+
+<hr />
+<h2>
+  CLIENT 2 <button (click)="add(client2)">AJOUTER</button>
+  <button (click)="remove(client2)">SUPPRIMER</button>
+</h2>
+<p>Nom : {{ client2.nom }}</p>
+<p>Prénom : {{ client2.prenom }}</p>
+<p>Age : {{ client2.age }}</p>
+<p>Email : {{ client2.email }}</p>
+<p>Entreprise : {{ client2.entreprise }}</p>
+
+<hr />
+<h2>ENTREPRISE...</h2>
+<p>A VOUS DE JOUER</p>
+<p>
+  Créez une classe "GrandeEntreprise" et affichez les emails des clients et
+  prestataires liés à cette entreprise. Le fichier entreprise.model.ts est déjà
+  créé.
+</p>
